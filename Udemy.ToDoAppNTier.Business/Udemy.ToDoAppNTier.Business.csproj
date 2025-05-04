@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="FluentValidation" Version="11.11.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Udemy.ToDoAppNTier.Common\Udemy.ToDoAppNTier.Common.csproj" />
+    <ProjectReference Include="..\Udemy.ToDoAppNTier.DataAccess\Udemy.ToDoAppNTier.DataAccess.csproj" />
+    <ProjectReference Include="..\Udemy.ToDoAppNTier.Dtos\Udemy.ToDoAppNTier.Dtos.csproj" />
+  </ItemGroup>
+
+</Project>
